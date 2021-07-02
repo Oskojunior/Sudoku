@@ -26,7 +26,7 @@ def valid(sud, num, location):
             return False
 
     for i in range(0, len(board)):
-        if sud[i][location[1]] == num and location[1] != i:
+        if sud[i][location[1]] == num and location[0] != i:
             return False
 
     box = location[0] // 3, location[1] // 3
